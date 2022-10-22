@@ -6,7 +6,9 @@ $connectionOptions = array(
                     "PWD" => "9y7Xlbah#TeRWYFD3hhPK3hLI" // update me
 );
     //Establishes the connection
-$connect = sqlsrv_connect($serverName, $connectionOptions);
+$connect = new mysqli($serverName, $connectionOptions);
+
+    //sqlsrv_connect
     
     //new mysqli('127.0.0.1:53542', 'azure', '6#vWHD_$', 'contactmanagement');
 
