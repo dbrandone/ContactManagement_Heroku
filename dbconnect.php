@@ -8,7 +8,7 @@
     //Establishes the connection
 //$connect = SQLSRV_CONNECT($serverName, $connectionOptions);
     
-    new mysqli('127.0.0.1:53542', 'azure', '6#vWHD_$', 'contactmanagement');
+    new mysql_connect('127.0.0.1:53542', 'azure', '6#vWHD_$', 'contactmanagement');
 
         if(!$connect){
             die("Can't Connect to SQL Server");
