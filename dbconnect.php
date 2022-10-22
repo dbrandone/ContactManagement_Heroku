@@ -1,13 +1,13 @@
 <?php
-$serverName = "eu-az-sql-serv1.database.windows.net"; // update me
-$username = "upjuoq7bx5i2qav"; // update me
-$password = "9y7Xlbah#TeRWYFD3hhPK3hLI"; // update me
-$database = "d4inlpy2hl419fl"; // update me
+$serverName = "localhost"; // update me
+$username = "root"; // update me
+$password = ""; // update me
+$database = "contactmanagement"; // update me
 
     //Establishes the connection
 //$connect = SQLSRV_CONNECT($serverName, $connectionOptions);
     
-    $connect = new sqlsrv_connect($serverName, $username, $password, $database);
+    $connect = new mysqli($serverName, $username, $password, $database);
 
         if(!$connect){
             die("No Connection to SQL Server");
