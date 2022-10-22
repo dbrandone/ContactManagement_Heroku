@@ -1,5 +1,5 @@
 <?php
-$serverName = "localhost"; // update me
+$serverName = "localhost/127.0.0.1"; // update me
 $username = "root"; // update me
 $password = ""; // update me
 $database = "contactmanagement"; // update me
