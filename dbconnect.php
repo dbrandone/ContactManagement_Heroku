@@ -8,7 +8,7 @@ $connectionOptions = array(
     //Establishes the connection
 //$connect = SQLSRV_CONNECT($serverName, $connectionOptions);
     
-    $connect = new mysqli('$ServerName', '$connectionOptions);
+    $connect = new mysqli($ServerName, $connectionOptions);
 
         if(!$connect){
             die("No Connection to SQL Server": $connect);
