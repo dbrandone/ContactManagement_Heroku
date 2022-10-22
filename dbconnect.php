@@ -11,7 +11,7 @@ $connect = sqlsrv_connect($serverName, $connectionOptions);
     //new mysqli('127.0.0.1:53542', 'azure', '6#vWHD_$', 'contactmanagement');
 
         if(!$connect){
-            die(sqlserv_errors($connect));
+            die("Can't Connect to SQL Server");
         }
     
 ?>
