@@ -6,14 +6,12 @@ $connectionOptions = array(
                     "PWD" => "9y7Xlbah#TeRWYFD3hhPK3hLI" // update me
 );
     //Establishes the connection
-$connect = new mysqli($serverName, $connectionOptions);
-
-    //sqlsrv_connect
+$connect = sqlsrv_connect($serverName, $connectionOptions);
     
     //new mysqli('127.0.0.1:53542', 'azure', '6#vWHD_$', 'contactmanagement');
 
         if(!$connect){
-            die(mysqli_error($connect));
+            die(sqlserv_errors($connect));
         }
     
 ?>
