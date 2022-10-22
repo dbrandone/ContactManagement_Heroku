@@ -7,7 +7,7 @@ $database = "d4inlpy2hl419fl"; // update me
     //Establishes the connection
 //$connect = SQLSRV_CONNECT($serverName, $connectionOptions);
     
-    $connect = mysqli_connect($serverName, $username, $password, $database);
+    $connect = new sqlsrv_connect($serverName, $username, $password, $database);
 
         if(!$connect){
             die("No Connection to SQL Server");
