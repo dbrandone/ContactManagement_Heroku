@@ -11,7 +11,7 @@ $connectionOptions = array(
     $connect = new mysqli('$ServerName', '$connectionOptions);
 
         if(!$connect){
-            die("No Connection to SQL Server");
+            die("No Connection to SQL Server": $connect);
         }
     
 ?>
