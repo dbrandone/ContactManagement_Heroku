@@ -1,13 +1,13 @@
 <?php
-$serverName = "localhost/127.0.0.1"; // update me
-$username = "root"; // update me
-$password = ""; // update me
-$database = "contactmanagement"; // update me
+$serverName = "jbb8y3dri1ywovy2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"; // update me
+$username = "l6u2uczwulj4933u"; // update me
+$password = "drijur97yfa48wzz"; // update me
+$database = "axox8dwbq0p8lnny"; // update me
 
     //Establishes the connection
 //$connect = SQLSRV_CONNECT($serverName, $connectionOptions);
     
-    $connect = mysqli_connect($serverName, $username, $password, $database);
+    $connect = new mysqli($serverName, $username, $password, $database);
 
         if(!$connect){
             die("No Connection to SQL Server");
