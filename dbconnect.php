@@ -6,7 +6,7 @@ $connectionOptions = array(
                     "Database" => "d4inlpy2hl419fl" // update me
 );
     //Establishes the connection
-$connect = sqlsrv_connect($serverName, $connectionOptions);
+$connect = SQLSRV_CONNECT($serverName, $connectionOptions);
     
     //new mysqli('127.0.0.1:53542', 'azure', '6#vWHD_$', 'contactmanagement');
 
